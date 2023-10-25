@@ -1,1 +1,19 @@
-{}
+{
+  "things": [
+    {
+      "name": "Kitka",
+      "interest": "Like",
+      "backgroundColor": "#d674f8"
+    },
+    {
+      "name": "Julian",
+      "interest": "Like",
+      "backgroundColor": "#ff831f"
+    },
+    {
+      "name": "Celery",
+      "interest": "Don't Like",
+      "backgroundColor": "#007c1c"
+    }
+  ]
+}
