@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: 'public/images/uploads'
+public_folder: '/images/uploads'
+collections:
+  - label: 'Things'
+    name: 'things'
+    file: 'src/_data/things.json'
+    fields:
+      - label: Things
+        name: things
+        widget: list
+        fields:
+          - { label: Name, name: name, widget: string }
+          - label: 'Interest'
+            name: 'interest'
+            widget: 'select'
+            options: ['Like', "Don't Like"]
+          - label: 'Background Color'
+            name: 'backgroundColor'
+            widget: 'color'

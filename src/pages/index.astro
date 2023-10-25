@@ -1,22 +1,23 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import fetchApi from '../lib/strapi'
-import type Thing from '../interfaces/thing';
+import Layout from '../layouts/Layout.astro'
+import Things from '../_data/things.json'
 
-const things = await fetchApi<Thing[]>({
-	endpoint: 'things',
-	wrappedByKey: 'data',
-
-});
+const things = {}
 ---
 
 <Layout title="Things I Like">
-	<main>		
-		<h1 class="text-7xl text-center font-bold tracking-wide mb-9">Things Katya </h1>
-		<div class="container flex justify-between">
-			<div class="w-5/12">
-				<h2><span class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-300 ">Likes</span></h2>
-				<ul>
+  <main>
+    <h1 class="text-7xl text-center font-bold tracking-wide mb-9">
+      Things Katya
+    </h1>
+    <div class="container flex justify-between">
+      <div class="w-5/12">
+        <h2>
+          <span
+            class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-300"
+            >Likes</span>
+        </h2>
+        <!-- <ul>
 					{ things ? 
 						things.filter((thing) => thing.attributes.interest === "Like").map((thing:Thing) => (
 							<li class='transition-all duration-300 ease-in-out p-8 rounded block my-8 opacity-75 hover:opacity-100 hover:scale-125' style={{backgroundColor: thing.attributes.backgroundColor}}>{thing.attributes.title}</li>
@@ -34,21 +35,20 @@ const things = await fetchApi<Thing[]>({
 						)) : "no things found :("
 					
 					}
-				</ul>
-			</div>
-		</div>
-	</main>
+				</ul> -->
+      </div>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
 </style>
