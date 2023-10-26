@@ -21,9 +21,19 @@
       "backgroundColor": "#6c6c6c"
     },
     {
+      "name": "When Kitka greets me",
+      "interest": "Like",
+      "backgroundColor": "#1dffbb"
+    },
+    {
       "name": "Charcoal Pencils",
       "interest": "Like",
       "backgroundColor": "#999999"
+    },
+    {
+      "name": "When Birds close their eyes",
+      "interest": "Like",
+      "backgroundColor": "#fffafa"
     }
   ]
 }
