@@ -14,6 +14,16 @@
       "name": "Celery",
       "interest": "Don't Like",
       "backgroundColor": "#007c1c"
+    },
+    {
+      "name": "Fruit Flies",
+      "interest": "Don't Like",
+      "backgroundColor": "#6c6c6c"
+    },
+    {
+      "name": "Charcoal Pnecils",
+      "interest": "Like",
+      "backgroundColor": "#999999"
     }
   ]
 }
